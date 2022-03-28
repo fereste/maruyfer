@@ -1,0 +1,11 @@
+:root {
+    --background: #ffa;
+    --font-color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* :root {
+        --background: #222;
+        --font-color: #ffa;
+    } */
+}
