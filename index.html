@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -36,8 +36,6 @@
         });
     </script>
 
-    <link rel="preload" href="styles.css" as="style">
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,32 +66,35 @@
         </header>
 
         <main>
-            <div class="row gap-0">
-                <div class="date col-6 d-flex">
-                    <div class="flex-grow-1">
-                        <div id="anillos">OO</div>
-                        <div>20</div>
-                        <div>mayo</div>
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="schedule col-6 d-flex flex-column">
-                    <div id="schedule-item">
-                        <div>20:30hs</div>
-                        <div>Iglesia Nuestra Señora del Carmen,</div>
-                        <div>Ramos Mejía</div>
-                    </div>
-                    <div id="schedule-item">
-                        <div>21:30hs</div>
-                        <div>Lugar a confirmar,</div>
-                        <div>Vaya uno a saber donde</div>
-                    </div>
-                </div>
-            </div>
+            <!-- Fecha -->
             <div>
-                <h2>Vení y depositanos platita acá</h2>
-                <h1>3000000726364235826389</h1>
+                <div class="date-container d-flex gap-5 justify-content-center align-items-center">
+                    <p class="date-day">20</p>
+                    <div class="date-month-year">
+                        <p>mayo</p>
+                        <p>2022</p>
+                    </div>
+                </div>
             </div>
+
+            <!-- Horarios -->
+            <div>
+                <div class="schedule-container">
+                    <ul>
+                        <li>
+                            <p>20:30hs</p>
+                            <p>Iglesia Nuestra Señora del Carmen</p>
+                            <p>Ramos Mejía</p>
+                        </li>
+                        <li>
+                            <p>21:30hs</p>
+                            <p>Lugar a confirmar</p>
+                            <p>Vaya uno a saber donde</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </main>
 
         <footer>

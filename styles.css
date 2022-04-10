@@ -1,7 +1,3 @@
-*:hover {
-    outline: 1px solid grey;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -12,6 +8,11 @@ html, body {
 
 header {
     background-image: url('img/header-bkg2.jpg');
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 .title {
@@ -25,20 +26,35 @@ header {
 }
 
 main {
+    padding: 30px;
 }
 
-.date {
-    text-align: center;
+.date-container {
+    gap: 0.7ch;
+    font-size: 1.7em;
 }
 
-.date::after {
-    content: '';
-    width: 0;
-    margin: 10px 0;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
+.date-container .date-day {
+    font-size: 2.3em;
 }
 
-.schedule {
-    gap: 1em;
-    line-height: 1.4em;
+.schedule-container {
+    padding-left: 40px;
+}   
+
+.schedule-container ul {
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    padding-inline-start: 0.7ch;
+    list-style-type: "❤";
+    padding-top: 0.5em;
+}
+
+.schedule-container li {
+    padding-left: 1em;
+    margin-bottom: 1em;
+    line-height: 2em;
+}
+
+.schedule-container li::marker {
+    color: red;
 }
