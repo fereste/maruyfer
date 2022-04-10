@@ -16,12 +16,13 @@ header {
     font-size: 3em;
 }
 
-#anillos {
-    color: var(--primary);
-}
-
 main {
     padding: 30px;
+}
+.bg-section {
+    background-image: url(../img/date-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Fecha */
@@ -44,12 +45,13 @@ main {
 /* Horarios */
 .schedule-container {
     padding-left: 40px;
-}
+    margin-top: 40px;
+}   
 
 .schedule-container ul {
     border-left: 1px solid rgba(0, 0, 0, 0.4);
     padding-inline-start: 0.7ch;
-    list-style-type: "❤";
+    list-style-type: "\2665";
     padding-top: 0.5em;
 }
 
@@ -60,6 +62,11 @@ main {
 
 .schedule-container li::marker {
     color: red;
+    font-size: 1.8em;
+}
+
+.place-text{
+    line-height: 1.4em;
 }
 
 .schedule-container li p {
