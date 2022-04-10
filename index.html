@@ -20,21 +20,37 @@
             width: 100%;
             left: 0;
             top: 0;
-            background-color: aqua;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
+        .loading-animation {
+            height: 120px;
+            width: auto;
+        }
     </style>
 
     <script>
-        // Loading
+        var loadingFinished = false;
         window.addEventListener('load', function (event) {
-            document.getElementById('loading').classList.add('d-none');
-            document.getElementById('content').classList.remove('d-none');
+            loadingFinished = true;
+        });
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+            let loopCounter = 0;
+            document.querySelector('lottie-player').addEventListener('loop', function (event) {
+                loopCounter++;
+                if (loadingFinished && loopCounter % 2 === 1) {
+                    document.getElementById('loading').classList.add('d-none');
+                    document.getElementById('content').classList.remove('d-none');
+                }
+            })
         });
     </script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,38 +63,37 @@
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <title>Boda de Maru y Fer</title>
+    <script defer src="js/main.js"></script>
+
+    <title>Maru y Fer</title>
 </head>
 
 <body>
     <div id="loading">
-        <span>
-            Loading...
-        </span>
-        <lottie-player src="img/loading.json" mode="bounce" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        <lottie-player src="img/loading.json" mode="bounce" background="transparent" speed="1" class="loading-animation"
+            loop autoplay>
+        </lottie-player>
     </div>
 
     <div id="content" class="d-none">
 
-        <header>
-            <h1 class="title">
-                Maru & Fer
-            </h1>
-        </header>
-
         <main>
+            <!-- 4 años -->
+            <div>
+
+            </div>
+
             <!-- Fecha -->
-            <section>
+            <div>
                 <div class="date-container">
                     <p class="date-day">20</p>
                     <p>mayo</p>
                     <p>2022</p>
                 </div>
-            </section>
+            </div>
 
             <!-- Horarios -->
-            <section>
+            <div>
                 <div class="schedule-container">
                     <ul>
                         <li>
@@ -87,23 +102,56 @@
                             <p>Ramos Mejía</p>
                         </li>
                         <li>
-                            <p>21:30hs</p>
+                            <p>22:00hs</p>
                             <p>Lugar a confirmar</p>
                             <p>Vaya uno a saber donde</p>
                         </li>
                     </ul>
                 </div>
-            </section>
+            </div>
 
+            <!-- Fotos -->
+            <div>
+                <img class="pics" src="img/foto1.jpg" alt="foto1">
+                <img class="pics" src="img/foto2.jpg" alt="foto2">
+                <img class="pics" src="img/foto3.jpg" alt="foto3">
+            </div>
+
+            <!-- Cuenta -->
+            <div>
+                <p>Si querés podés ayudarnos con la luna de miel :)</p>
+                <p>Caja de ahorro en pesos</p>
+                <div class="account-copy-data">
+                    <p>CBU: <span data-cbu>1234567890123456789012</span></p>
+                    <button type="button" class="button-copy" onclick="copyToClipboard('cbu')">
+                        <img src="img/copy.svg" alt="Copiar CBU al portapapeles">
+                    </button>
+                </div>
+                <div class="account-copy-data">
+                    <p>Alias: <span data-alias>maru.fer</span></p>
+                    <button type="button" class="button-copy" onclick="copyToClipboard('alias')">
+                        <img src="img/copy.svg" alt="Copiar alias al portapapeles">
+                    </button>
+                </div>
+                <p>CUIT: 20-35118618-7</p>
+            </div>
+
+            <!-- Gracias -->
+            <div class="thank-you">
+                <p>
+                    Esperamos que puedas acompañarnos en este momento tan especial
+                </p>
+            </div>
         </main>
-
-        <footer>
-            Gracias por llegar hasta el final
-        </footer>
 
     </div>
 
-    <!-- <script>
+</body>
+
+</html>
+
+
+<!-- <script>
         // fetch('https://maruyfer.azurewebsites.net/api/GetContactData?code=l/L8MDNrle0itNdu6Zq3QX0qAwqTJMQ3zD9cQUVxJ96V97R35ia9Dg==')
         //     .then(response => response.text())
         //     .then(value => {
@@ -112,7 +160,3 @@
     </script>
     
     <div id="sometext"></div> -->
-
-</body>
-
-</html>

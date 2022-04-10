@@ -7,12 +7,7 @@ html, body {
 }
 
 header {
-    background-image: url('img/header-bkg2.jpg');
-}
-
-p {
-    margin: 0;
-    padding: 0;
+    background-image: url('../img/header-bkg2.jpg');
 }
 
 .title {
@@ -41,10 +36,15 @@ main {
     line-height: 0.8em;
 }
 
+.date-container p {
+    margin: 0;
+    padding: 0;
+}
+
 /* Horarios */
 .schedule-container {
     padding-left: 40px;
-}   
+}
 
 .schedule-container ul {
     border-left: 1px solid rgba(0, 0, 0, 0.4);
@@ -56,9 +56,44 @@ main {
 .schedule-container li {
     padding-left: 1em;
     margin-bottom: 1em;
-    line-height: 2em;
 }
 
 .schedule-container li::marker {
     color: red;
+}
+
+.schedule-container li p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+/* Fotos */
+.pics {
+    width: 100%;
+}
+
+/* Cuenta */
+.account-copy-data {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button-copy {
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+.button-copy:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Gracias */
+.thank-you {
+    width: 100%;
+    text-align: center;
 }
