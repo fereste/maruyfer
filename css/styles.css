@@ -20,7 +20,7 @@ main {
     padding: 30px;
 }
 .bg-section {
-    background-image: url(../img/date-bg.svg);
+    background-image: url(../img/date-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -73,6 +73,12 @@ main {
     margin: 0;
     padding: 0;
     line-height: 1.5em;
+}
+
+.img-schedule{
+    width: 70px;
+    height: auto;
+    margin-left: 10px;
 }
 
 /* Fotos */
