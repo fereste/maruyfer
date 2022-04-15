@@ -1,10 +1,20 @@
-function copyToClipboard(what) {
-    // navigator.clipboard.writeText(document.querySelector(`[data-${what}]`).innerHTML);
+function copyToClipboard(button, what) {
+    navigator.clipboard.writeText(document.querySelector(`[data-${what}]`).innerHTML);
 
-    document.querySelector('#copy').classList.add('hide');
-    document.querySelector('#tick').classList.remove('hide');
+    const copyImg = button.querySelector('img.copy');
+    const tickImg = button.querySelector('img.tick');
+    copyImg.classList.add('hide');
+    tickImg.classList.remove('hide');
     setTimeout(() => {
-        document.querySelector('#copy').classList.remove('hide');
-        document.querySelector('#tick').classList.add('hide');
+        copyImg.classList.remove('hide');
+        tickImg.classList.add('hide');
     }, 1000);
 }
+
+document.getElementById('btnCbu').addEventListener('click', function() {
+    copyToClipboard(this, 'cbu');
+});
+
+document.getElementById('btnAlias').addEventListener('click', function() {
+    copyToClipboard(this, 'alias');
+});
