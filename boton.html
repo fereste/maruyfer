@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/top-scroll.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+    <script defer src="js/main.js"></script>
+
+    <style>
+        button {
+            width: 40px;
+        }
+
+        button img {
+            position: absolute;
+            width: 16px;
+            transition: linear opacity 100ms
+        }
+
+        .hide {
+            opacity: 0;
+            animation: tickanimation 250ms linear 10ms 1;
+        }
+
+        @keyframes tickanimation {
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <button type="button" class="button-copy" onclick="copyToClipboard('alias')">
+            <img id="copy" src="img/copy.svg" alt="Copiar alias al portapapeles">
+            <img id="tick" src="img/tick.svg" alt="Listo" class="hide">
+        </button>
+    </div>
+</body>
+
+</html>
