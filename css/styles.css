@@ -17,13 +17,22 @@ header {
 }
 
 main {
-    padding: 30px;
+    padding: 30px 0;
 }
 
+.curved{
+    background-image: url(../img/curve.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-top: -200px;
+    padding-top: 80px;
+}
 .bg-section {
     background-image: url(../img/date-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
 }
 
 /* Fecha */
@@ -31,6 +40,7 @@ main {
     font-size: 1.7em;
     text-align: center;
     width: 100%;
+    padding: 10px 0;
 }
 
 .date-container .date-day {
@@ -47,6 +57,7 @@ main {
 .schedule-container {
     padding-left: 40px;
     margin-top: 40px;
+    padding: 20px 30px 10px 70px;
 }   
 
 .schedule-container ul {
@@ -88,6 +99,9 @@ main {
 }
 
 /* Cuenta */
+.account-info-box{
+    background-color: #f9a806;
+}
 .account-copy-data {
     display: flex;
     align-items: center;
@@ -124,4 +138,12 @@ main {
 .thank-you {
     width: 100%;
     text-align: center;
+}
+
+/* Footer */
+footer{
+    font-size: 0.8rem;
+    color: #cfa040;
+    text-align: center;
+    padding: 20px;
 }
