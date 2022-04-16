@@ -99,13 +99,37 @@ main {
 }
 
 /* Cuenta */
-.account-info-box{
-    background-color: #f9a806;
+.account-info-section{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.flowers-account{
+    width: 100%;
+    height: auto;
+}
+
+.honeymoon{
+    text-align: center;
+    padding: 5px 30px;
+}
+
+.account-info-box{
+    margin: 15px 0;
+}
+
+.account{
+    padding: 5px 10px;
+}
+
 .account-copy-data {
     display: flex;
     align-items: center;
     gap: 5px;
+    padding: 0 10px;
 }
 
 .button-copy {
@@ -134,10 +158,20 @@ main {
     opacity: 0;
 }
 
+.flowers-account-footer{
+    width: 50%;
+    height: auto;
+}
+
 /* Gracias */
 .thank-you {
-    width: 100%;
     text-align: center;
+    padding: 0 30px;
+}
+.thank-you p {
+    margin: 20px 0;
+    color: #00463c;
+    font-weight: bold;
 }
 
 /* Footer */
