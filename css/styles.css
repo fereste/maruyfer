@@ -137,6 +137,11 @@ main {
     justify-content: center;
 }
 
+.account-info-section p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 .flowers-account{
     width: 100%;
     height: auto;
@@ -151,15 +156,12 @@ main {
     margin: 15px 0;
 }
 
-.account{
-    padding: 5px 10px;
-}
-
 .account-copy-data {
     display: flex;
     align-items: center;
     gap: 5px;
     padding: 0 10px;
+    height: 32px;
 }
 
 .button-copy {
