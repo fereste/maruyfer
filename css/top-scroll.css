@@ -40,20 +40,21 @@ figure {
     width: 100%;
     height: 100%;
     background-size: cover;
+    background-position: top center;
 }
 
 .pics-scroll-container>section:nth-child(1) figure {
-    background-image: url('/img/foto1.jpg');
+    background-image: url('/img/juntos.jpg');
 }
 
 .pics-scroll-container>section:nth-child(2) figure {
-    background-image: url('/img/foto2.jpg');
+    background-image: url('/img/viajes.jpg');
 }
 
 .pics-scroll-container>section:nth-child(3) figure {
-    background-image: url('/img/foto3.jpg');
+    background-image: url('/img/viviendo.jpg');
 }
 
 .pics-scroll-container>section:nth-child(4) figure {
-    background-image: url('/img/foto4.jpg');
+    background-image: url('/img/nos-casamos.jpg');
 }
