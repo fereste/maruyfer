@@ -1,12 +1,5 @@
 :root {
     --background: #fffaee;
     --font-color: #222;
-    --primary: rgb(243, 181, 46);
-}
-
-@media (prefers-color-scheme: dark) {
-    /* :root {
-        --background: #222;
-        --font-color: #ffa;
-    } */
+    --primary: #f3b52e;
 }
