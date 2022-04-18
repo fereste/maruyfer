@@ -3,3 +3,8 @@
     --font-color: #222;
     --primary: #f3b52e;
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src: url(icomoon.woff);
+}
