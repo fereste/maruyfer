@@ -126,9 +126,58 @@ main {
 }
 
 /* Fotos */
-.pics {
-    width: 100%;
-}
+div#background {
+    --bs-gutter-x: 0;
+    padding: 30px 0 40px;
+    position: relative;
+  }
+  
+  div#gallery {
+    margin: auto;
+  }
+  
+  
+  #background img {
+    height: 150px;
+    margin: 0px;
+  }
+  
+  #background figure {
+    float: left;
+    position: relative;
+    background-color: #f3f1ee;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 3px #bcbcbc;
+  }
+  
+  figure.pic1 {
+    -webkit-transform : rotate(-10deg);
+    z-index: 1;
+  }
+  
+  figure.pic2 {
+    -webkit-transform : rotate(15deg);
+    z-index: 2;
+    right: 0;
+    top: 30px;
+  }
+  
+  figure.pic3 {
+    -webkit-transform: rotate(10deg);
+    z-index: 1;
+    margin-top: -10px !important;
+    left: 25px;
+  }
+  
+  figure.pic4 {
+    -webkit-transform: rotate(-8deg);
+    z-index:1;
+    right: 0;
+    top: 15px;
+  }
 
 /* Cuenta */
 .account-info-section{

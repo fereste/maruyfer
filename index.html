@@ -82,6 +82,7 @@
     <link rel="stylesheet" href="css/top-scroll.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
 
     <script defer src="js/main.js"></script>
 
@@ -161,11 +162,26 @@
             </div>
 
             <!-- Fotos -->
-            <div>
-                <img class="pics" src="img/foto1.jpg" alt="foto1">
-                <img class="pics" src="img/foto2.jpg" alt="foto2">
-                <img class="pics" src="img/foto3.jpg" alt="foto3">
-            </div>
+            <div class="row" id="background">
+                <div id="gallery">
+                  <figure class="pic1">
+                    <img src="img/foto1.jpg" />
+                    <figcaption>&nbsp;</figcaption>
+                  </figure>
+                  <figure class="pic2">
+                    <img src="img/foto2.jpg" />
+                    <figcaption>&nbsp;</figcaption>
+                  </figure>
+                  <figure class="pic3">
+                    <img src="img/foto2.jpg" />
+                    <figcaption>&nbsp;</figcaption>
+                  </figure>
+                  <figure class="pic4">
+                    <img src="img/foto1.jpg" />
+                    <figcaption>&nbsp;</figcaption>
+                  </figure>
+                </div>
+              </div>
 
             <!-- Gracias -->
             <div class="thank-you">
@@ -211,6 +227,9 @@
         </footer>
 
     </div>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/demo4.js"></script>
 
 </body>
 
