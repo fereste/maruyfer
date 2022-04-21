@@ -67,3 +67,21 @@
 .pics-scroll-container>section:nth-child(4) figure {
     background-image: url('/img/nos-casamos.jpg');
 }
+
+@media (min-width: 1000px) {
+    .pics-scroll-container>section:nth-child(1) figure {
+        background-image: url('/img/juntos-web.jpg');
+    }
+    
+    .pics-scroll-container>section:nth-child(2) figure {
+        background-image: url('/img/viajes-web.jpg');
+    }
+    
+    .pics-scroll-container>section:nth-child(3) figure {
+        background-image: url('/img/viviendo-web.jpg');
+    }
+    
+    .pics-scroll-container>section:nth-child(4) figure {
+        background-image: url('/img/nos-casamos-web.jpg');
+    }
+}
